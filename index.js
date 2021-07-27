@@ -20,5 +20,5 @@ app.listen(PORT, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.header("Access-Control-Allow-Origin", "*").send("Hello world");
 });
