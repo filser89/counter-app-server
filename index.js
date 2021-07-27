@@ -11,9 +11,9 @@ app.use(
     origin: ["http://localhost:8080"],
   })
 );
-
-app.listen(5000, () => {
-  console.log("Server started on port 5000");
+const PORT = env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log("Server started on port ");
 });
 
 app.get("/", (req, res) => {
