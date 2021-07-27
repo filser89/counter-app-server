@@ -8,7 +8,10 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:8080"],
+    origin: [
+      "http://localhost:8080",
+      "https://wizardly-wright-55e682.netlify.app/",
+    ],
   })
 );
 const PORT = process.env.PORT || 5000;
